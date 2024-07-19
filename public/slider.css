@@ -1,0 +1,14 @@
+.slick-prev:before,
+.slick-next:before {
+    color: black; 
+}
+.slick-dots li button:before {
+    color: black; 
+}
+.slick-dots li.slick-active button:before {
+    color: black; 
+}
+.slider-image {
+    height: 400px; 
+    object-fit: cover;
+}
