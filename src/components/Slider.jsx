@@ -39,23 +39,17 @@ const MainSlider = () => {
         ],
     };
 
-    const imgStyle = {
-        height: '900px', 
-        objectFit: 'cover',
-        width: '100%'
-    };
-
     return (
         <div className="w-full">
             <Slider {...settings}>
                 <div>
-                    <img src="/img/slider/burj1.jpg" alt="Slide 1" style={imgStyle} />
+                    <img src="/img/slider/burj1.jpg" alt="Slide 1" className="w-full h-64 md:h-80 lg:h-[900px] object-cover" />
                 </div>
                 <div>
-                    <img src="/img/slider/Slide-5.jpeg" alt="Slide 2" style={imgStyle} />
+                    <img src="/img/slider/Slide-5.jpeg" alt="Slide 2" className="w-full h-64 md:h-80 lg:h-[900px] object-cover" />
                 </div>
                 <div>
-                    <img src="/img/slider/burj1.jpg" alt="Slide 3" style={imgStyle} />
+                    <img src="/img/slider/burj1.jpg" alt="Slide 3" className="w-full h-64 md:h-80 lg:h-[900px] object-cover" />
                 </div>
             </Slider>
         </div>

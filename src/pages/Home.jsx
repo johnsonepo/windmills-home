@@ -6,6 +6,12 @@ import AboutUs from "../components/AboutUs";
 import Services from "../components/Services";
 import TotalExperience from "../components/TotalExperience";
 import CoreServices from "../components/CoreService";
+import WhatWeDo from "../components/WhatWeDo";
+import MarketRecognition from "../components/MarketRecognition";
+import MajorClients from "../components/MajorClients";
+import TestimonialSlider from "../../public/img/TestimonialSlider";
+import Footer from "../components/Footer";
+import FooterBottom from "../components/FooterBottom";
 
 const Home = () => {
     const getCurrentDate = () => {
@@ -34,7 +40,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="border-t border-gray-200">
+                <div className = "border-t border-gray-200">
                     <Navbar />
                 </div>
             </div>
@@ -51,8 +57,26 @@ const Home = () => {
                 <div className="w-full">
                     <TotalExperience />
                 </div>
-                <div className="px-3 md:px-6 lg:px-[320px]">
+                <div className="ppx-3 md:px-6 lg:px-[320px]">
                     <CoreServices />
+                </div>
+                <div className="mb-12 mt-6 ppx-3 md:px-6 lg:px-[320px]">
+                    <WhatWeDo />
+                </div>
+                <div className="mb-12 mt-6 ">
+                    <MarketRecognition />
+                </div>
+                <div className="w-full mb-10">
+                    <MajorClients />
+                </div>
+                <div className = "mb-12 mt-20 px-3 md:px-6 lg:px-[320px]">
+                    <TestimonialSlider />
+                </div>
+                <div className = "mb-12 px-3 md:px-6 lg:px-[320px]">
+                    <Footer />
+                </div>
+                <div className="w-full">
+                    <FooterBottom />
                 </div>
             </div>
         </div>
