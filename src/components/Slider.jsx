@@ -55,7 +55,7 @@ const MainSlider = () => {
                     <div key={key} className="relative">
                         {slide.title && (
                             <div className={`absolute text-blue-600 inset-0 flex flex-col justify-center items-center text-center transition-transform duration-1000 ease-out delay-1000 ${show ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-full opacity-0'}`}>
-                                <h2 className="text-5xl md:text-[50px] lg:text-[65px] font-bold">{slide.title}</h2>
+                                <h2 className="text-2xl md:text-[35px] lg:text-[55px] font-bold">{slide.title}</h2>
                                 {slide.subtitle && (
                                     <p className="mt-2 text-2xl md:text-4xl lg:text-5xl">{slide.subtitle}</p>
                                 )}

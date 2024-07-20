@@ -9,7 +9,7 @@ import CoreServices from "../components/CoreService";
 import WhatWeDo from "../components/WhatWeDo";
 import MarketRecognition from "../components/MarketRecognition";
 import MajorClients from "../components/MajorClients";
-import TestimonialSlider from "../../public/img/TestimonialSlider";
+import TestimonialSlider from "../components/TestimonialSlider";
 import Footer from "../components/Footer";
 import FooterBottom from "../components/FooterBottom";
 

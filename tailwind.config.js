@@ -17,6 +17,7 @@ export default {
       fontSize: {
         'nm': '15px',
       },
+      
     },
   },
   plugins: [],
