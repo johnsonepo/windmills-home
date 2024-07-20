@@ -1305,6 +1305,10 @@ video {
     padding-right: 1.5rem;
   }
 
+  .md\:pt-\[157px\] {
+    padding-top: 157px;
+  }
+
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;

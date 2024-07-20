@@ -44,7 +44,7 @@ const Home = () => {
                     <Navbar />
                 </div>
             </div>
-            <div className="pt-[157px]"> 
+            <div className="pt-20 md:pt-[157px]"> 
                 <MainSlider />
             </div>
             <div className="">
@@ -69,7 +69,7 @@ const Home = () => {
                 <div className="w-full mb-10">
                     <MajorClients />
                 </div>
-                <div className = "mb-12 mt-20 px-3 md:px-6 lg:px-[320px]">
+                <div className = "mb-12 mt-10 px-3 md:px-6 lg:px-[320px]">
                     <TestimonialSlider />
                 </div>
                 <div className = "mb-12 px-3 md:px-6 lg:px-[320px]">
