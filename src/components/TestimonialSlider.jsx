@@ -46,7 +46,7 @@ const TestimonialSlider = () => {
                                 <img
                                     src={testimonial.image}
                                     alt={`Testimonial ${index + 1}`}
-                                    className="w-[270px] h-[210px] object-cover rounded-lg"
+                                    className="w-[330px] h-[180px] object-cover rounded-lg"
                                 />
                             </div>
                         </div>
