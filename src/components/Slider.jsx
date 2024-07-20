@@ -1,7 +1,8 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import sliderData from '../data/slider';
 
 const MainSlider = () => {
     const settings = {
@@ -11,7 +12,9 @@ const MainSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
+        beforeChange: () => setShow(false), 
+        afterChange: () => setTimeout(() => setShow(true), 500),
         responsive: [
             {
                 breakpoint: 1024,
@@ -39,18 +42,28 @@ const MainSlider = () => {
         ],
     };
 
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        setShow(true);
+    }, []);
+
     return (
         <div className="w-full">
             <Slider {...settings}>
-                <div>
-                    <img src="/img/slider/burj1.jpg" alt="Slide 1" className="w-full h-64 md:h-80 lg:h-[900px] object-cover" />
-                </div>
-                <div>
-                    <img src="/img/slider/Slide-5.jpeg" alt="Slide 2" className="w-full h-64 md:h-80 lg:h-[900px] object-cover" />
-                </div>
-                <div>
-                    <img src="/img/slider/burj1.jpg" alt="Slide 3" className="w-full h-64 md:h-80 lg:h-[900px] object-cover" />
-                </div>
+                {sliderData.map((slide, key) => (
+                    <div key={key} className="relative">
+                        {slide.title && (
+                            <div className={`absolute text-blue-600 inset-0 flex flex-col justify-center items-center text-center transition-transform duration-1000 ease-out delay-1000 ${show ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-full opacity-0'}`}>
+                                <h2 className="text-5xl md:text-[50px] lg:text-[65px] font-bold">{slide.title}</h2>
+                                {slide.subtitle && (
+                                    <p className="mt-2 text-2xl md:text-4xl lg:text-5xl">{slide.subtitle}</p>
+                                )}
+                            </div>
+                        )}
+                        <img src={slide.image} className="w-full h-64 md:h-80 lg:h-[730px] object-cover" />
+                    </div>
+                ))}
             </Slider>
         </div>
     );

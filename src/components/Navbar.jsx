@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
-import Logo from '/img/logo.png'; 
+import Website from '../data/website';
+import menuItems from '../data/navbar-menu';
 
 const Navbar = () => {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -46,84 +47,16 @@ const Navbar = () => {
         }
     };
 
-    const menuItems = [
-        { title: 'Home', href: '/' },
-        { title: 'Windmills', href: '/windmills',
-            submenu: [
-                { title: 'Competitive Servicing Propositions', href: '#' },
-                { title: 'Chairman', href: '#' },
-                { title: 'Management Team', href: '#' },
-                { title: 'Clients', href: '#' },
-                { title: 'International Network Affiliation', href: '#' },
-                { title: 'Accolades', href: '#' },
-                { title: 'Career Opportunities', href: '#' },
-                { title: 'Contacts', href: '#' },
-            ]
-         },
-        { title: 'Valuation', href: '/valuation',
-            submenu: [
-                { title: 'Residential Valuation', href: '#' },
-                { title: 'Commercial Valuation', href: '#' },
-                { title: 'Industrial Asset Valuation', href: '#' },
-                { title: 'Business Valuation', href: '#' },
-                { title: 'Portfolio Valuation', href: '#' },
-                { title: 'Assignments', href: '#' },
-                { title: 'Property Valuation Request Form', href: '#' },
-            ]
-         },
-        { title: 'Building Consulting', href: '/building-consulting',
-            submenu: [
-                { title: 'Reserve Fund Study', href: '#' },
-                { title: 'Measurement Surveying', href: '#' },
-                { title: 'Escrow Account Monitoring', href: '#' },
-                { title: 'Reinstatement Cost Assessment', href: '#' },
-                { title: 'Technical Snagging', href: '#' },
-                { title: 'Structural Survey', href: '#' },
-                { title: 'Building Condition Survey', href: '#' },
-                { title: 'Service Charge Modelling', href: '#' }
-            ]
-        },
-        { title: 'Advisory', href: '/advisory',
-            submenu: [
-                { title: 'Management Consulting', href: '#' },
-            ]
-         },
-        { title: 'IQI Windmills', href: '/iqi-windmills',
-            submenu: [
-                { title: 'Property Brokerage', href: '#' },
-                { title: 'Property Leasing', href: '#' },
-                { title: 'Property Supervision / Management', href: '#' },
-                { title: 'Brokerage Consultant', href: '#' },
-                { title: 'IQI Windmills Website', href: '#' }
-            ]
-         },
-        { title: 'Market', href: '/market',
-            submenu: [
-                { title: 'Executive Newsletter', href: '#' },
-                { title: 'Research Reports', href: '#' },
-                { title: 'Experts Opinion', href: '#' }
-            ]
-         },
-        { title: 'Media', href: '/media',
-            submenu: [
-                { title: 'Fun at Windmills', href: '#' },
-                { title: 'Trainings & Conferences', href: '#' },
-                { title: 'Press', href: '#' }
-            ]
-         },
-    ];
-
     return (
         <>
             <div className="hidden mdl:block bg-white w-full">
                 <div className="flex items-center justify-between h-[120px] px-8">
-                    <img src={Logo} className="w-32 md:w-52" alt="Logo" />
+                    <img src={Website.logo} className="w-32 md:w-52" />
                     <div className="flex items-center justify-end w-full gap-5">  
                         <div className="flex justify-end w-full space-x-6">
                             <ul className="flex items-center space-x-3 lg:space-x-4 xl:space-x-10 font-extralight">
                                 {menuItems.map((item, index) => (
-                                    <li key={index}
-                                        className="relative"
+                                    <li key={index} className="relative"
                                         onMouseEnter={() => handleMouseEnter(index)}
                                         onMouseLeave={handleMouseLeave} >
                                         <a href={item.href}
@@ -163,7 +96,7 @@ const Navbar = () => {
                             <Bars3Icon className="w-8 h-8 text-gray-700" />
                         )}
                     </button>
-                    <img src={Logo} className="w-32 mx-auto" alt="Logo" />
+                    <img src={Website.logo} className="w-32 mx-auto" />
                     <div>
                     <MagnifyingGlassIcon className="w-8 h-8 text-gray-700" />
                     </div>

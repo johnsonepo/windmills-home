@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Footer = () => {
     return (
@@ -18,6 +17,13 @@ const Footer = () => {
                         <li><a href="#" className="hover:text-primary">- Machinery Valuation</a></li>
                         <li><a href="#" className="hover:text-primary">- Value Add Advisory</a></li>
                     </ul>
+                    <div className=" pt-16">
+                        <h4 className="text-lg font-bold mb-4 text-primary uppercase">New Service</h4>
+                        <ul className="space-y-1 text-nm text-gray-800">
+                        <li><a href="#" className="hover:text-primary">- Building Consulting Services</a></li>
+                        <li><a href="#" className="hover:text-primary">- Management Consulting Services</a></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="space-y-4">
