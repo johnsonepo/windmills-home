@@ -2,7 +2,7 @@
 import Website from "../data/website";
 const FooterBottom = () => {
     const currentYear = new Date().getFullYear();
-    const codebase = 'https://envoos.com';
+    const codebase = 'https://github.com/johnsonepo/windmills-home/';
     return (
         <div className=" relative">
             {/* <div>
