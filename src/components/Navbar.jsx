@@ -107,7 +107,7 @@ const Navbar = () => {
                             {menuItems.map((item, index) => (
                                 <li key={index} className="relative w-full pl-4">
                                     <div className="flex justify-between items-center px-4 py-2 pr-8">
-                                        <a href={item.href} className=" block">
+                                        <a onClick={() => toggleSubmenu(index)}  className=" block">
                                             {item.title}
                                         </a>
                                         {item.submenu && (
