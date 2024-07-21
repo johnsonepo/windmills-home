@@ -22,7 +22,7 @@ const Home = () => {
     const today = getCurrentDate();
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden ">
             <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
                 <div className="bg-primary w-full h-[35px] flex items-center justify-between text-white px-4">
                     <div className="flex items-center space-x-2">
