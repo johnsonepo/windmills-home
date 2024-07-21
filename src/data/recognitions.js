@@ -8,6 +8,7 @@ const RecognitionData = [
             'Micro Business - Finalist - 2019',
             'Customer Focus - Finalist - 2019',
         ],
+        time: 0.2
     },
     {
         image: '/img/recognitions/dednew.png',
@@ -16,6 +17,7 @@ const RecognitionData = [
             'Professional Services - Runner Up - 2019',
             'Int’l Business Excellence Awards',
         ],
+        time: 0.24
     },
     {
         image: '/img/recognitions/dldnews.png',
@@ -25,6 +27,7 @@ const RecognitionData = [
             'Real Estate Consulting - Runner Up - 2018',
             'Gulf Real Estate Awards',
         ],
+        time: 0.28
     },
     {
         image: '/img/recognitions/nbc-awards-logo-small-copy.png',
@@ -33,6 +36,7 @@ const RecognitionData = [
             'Sustainable Innovation Award - Finalist - 2019',
             'NBC UAE Awards 2019',
         ],
+        time: 0.2
     },
     {
         image: '/img/recognitions/Dubai-rera.png',
@@ -41,6 +45,7 @@ const RecognitionData = [
             'RERA Valuations Services',
             'Silver Rated Valuation Firm - 2019',
         ],
+        time: 0.24
     },
     {
         image: '/img/recognitions/fuaeci.png',
@@ -49,6 +54,7 @@ const RecognitionData = [
             'Certificate of Appreciation',
             'Federation of UAE Chamber',
         ],
+        time: 0.28
     },
 ];
 export default RecognitionData

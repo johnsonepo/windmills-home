@@ -1,4 +1,6 @@
 import RecognitionData from "../data/recognitions";
+import { motion } from "framer-motion";
+import slideIn from "../utilities/animations/slide";
 
 const MarketRecognition = () => {
     return (
@@ -7,7 +9,14 @@ const MarketRecognition = () => {
                 <h1 className="text-3xl font-bold py-14 text-center text-primary">Market Recognition</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                     {RecognitionData.map((recognition, index) => (
-                        <div key={index} className="p-2">
+                        <motion.div 
+                            key={index} 
+                            className="p-2"
+                            variants={slideIn('up', 130, recognition.time)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0}}
+                            >
                             <img src={recognition.image} alt={`Recognition ${index}`} className="h-[100px] w-full object-contain mb-3 " />
                             <div className="p-2">
                                 <ul className="">
@@ -16,7 +25,7 @@ const MarketRecognition = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

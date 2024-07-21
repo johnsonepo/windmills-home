@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import TotalExperienceData from '../data/total-experience';
+import { motion } from 'framer-motion';
+import slideIn from '../utilities/animations/slide';
 
 const useCountUp = (end, duration) => {
     const [count, setCount] = useState(0);
@@ -31,22 +33,42 @@ const TotalExperience = () => {
                 <div className="relative w-full max-w-screen-xl mx-auto px-4 py-8">
                     <h1 className="text-3xl md:text-3xl font-bold mb-10 text-center">{TotalExperienceData.title}</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
-                        <div>
-                            <h2 className="text-4xl font-bold">{useCountUp(300, 8)}+</h2>
+                        <motion.div 
+                            variants={slideIn('up', 60, 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0}}
+                            >
+                                <h2 className="text-4xl font-bold">{useCountUp(300, 3)}+</h2>
                             <p className="text-lg">Happy Customers</p>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            variants={slideIn('up', 60, 0.23)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0}}
+                            >
                             <h2 className="text-4xl font-bold">{useCountUp(40000, 3)}+</h2>
                             <p className="text-lg">Advisory and Valuations</p>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            variants={slideIn('up', 60, 0.26)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0}}
+                            >
                             <h2 className="text-4xl font-bold">{useCountUp(150, 3)}+</h2>
                             <p className="text-lg">Billion AED Transactions</p>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            variants={slideIn('up', 60, 0.30)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0}}
+                            >
                             <h2 className="text-4xl font-bold">{useCountUp(45, 3)}</h2>
                             <p className="text-lg">Years of Experience</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
