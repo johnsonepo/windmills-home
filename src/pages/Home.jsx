@@ -50,19 +50,19 @@ const Home = () => {
                 <MainSlider />
             </div>
             <div className="">
-                <div className="px-3 md:px-6 lg:px-[320px]">
+                <div className="px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <AboutUs />
                 </div>
-                <div className="mb-12 mt-6 px-3 md:px-6 lg:px-[320px]">
+                <div className="mb-12 mt-6 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <Services />
                 </div>
                 <div className="w-full">
                     <TotalExperience />
                 </div>
-                <div className="ppx-3 md:px-6 lg:px-[320px]">
+                <div className="ppx-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <CoreServices />
                 </div>
-                <div className="mb-12 mt-6 ppx-3 md:px-6 lg:px-[320px]">
+                <div className="mb-12 mt-6 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <WhatWeDo />
                 </div>
                 <div className="mb-12 mt-6 ">
@@ -71,10 +71,10 @@ const Home = () => {
                 <div className="w-full mb-10">
                     <MajorClients />
                 </div>
-                <div className = "mb-12 mt-10 px-3 md:px-6 lg:px-[320px]">
+                <div className = "mt-10 mb-64 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <TestimonialSlider />
                 </div>
-                <div className = "mb-12 px-3 md:px-6 lg:px-[320px]">
+                <div className = "mb-12 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <Footer />
                 </div>
                 <div className="w-full">

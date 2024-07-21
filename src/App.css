@@ -630,6 +630,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
 }
@@ -680,6 +684,14 @@ video {
 
 .mt-6{
   margin-top: 1.5rem;
+}
+
+.mb-48{
+  margin-bottom: 12rem;
+}
+
+.mb-64{
+  margin-bottom: 16rem;
 }
 
 .block{
@@ -792,8 +804,8 @@ video {
   width: 2rem;
 }
 
-.w-\[330px\]{
-  width: 330px;
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-full{
@@ -1065,16 +1077,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .pl-4{
   padding-left: 1rem;
 }
 
 .pl-6{
   padding-left: 1.5rem;
-}
-
-.pl-8{
-  padding-left: 2rem;
 }
 
 .pr-3{
@@ -1091,10 +1103,6 @@ video {
 
 .pt-20{
   padding-top: 5rem;
-}
-
-.pl-3{
-  padding-left: 0.75rem;
 }
 
 .text-left{
@@ -1153,14 +1161,6 @@ video {
 
 .uppercase{
   text-transform: uppercase;
-}
-
-.leading-relaxed{
-  line-height: 1.625;
-}
-
-.leading-loose{
-  line-height: 2;
 }
 
 .text-blue-600{
@@ -1308,12 +1308,20 @@ html, body{
     height: 20rem;
   }
 
+  .md\:h-\[300px\]{
+    height: 300px;
+  }
+
   .md\:h-\[450px\]{
     height: 450px;
   }
 
   .md\:w-52{
     width: 13rem;
+  }
+
+  .md\:w-\[800px\]{
+    width: 800px;
   }
 
   .md\:grid-cols-2{
@@ -1341,11 +1349,6 @@ html, body{
 
   .md\:text-\[40px\]{
     font-size: 40px;
-  }
-
-  .md\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
 
@@ -1396,14 +1399,14 @@ html, body{
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:px-72{
     padding-left: 18rem;
     padding-right: 18rem;
-  }
-
-  .lg\:px-\[320px\]{
-    padding-left: 320px;
-    padding-right: 320px;
   }
 
   .lg\:pl-8{
@@ -1418,35 +1421,12 @@ html, body{
   .lg\:text-\[65px\]{
     font-size: 65px;
   }
+}
 
-  .lg\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-\[90px\]{
-    font-size: 90px;
-  }
-
-  .lg\:text-\[80px\]{
-    font-size: 80px;
-  }
-
-  .lg\:leading-relaxed{
-    line-height: 1.625;
-  }
-
-  .lg\:text-\[\]{
-    color: ;
-  }
-
-  .lg\:text-\[60\]{
-    color: 60;
+@media (min-width: 1200px){
+  .mxlg\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
@@ -1455,6 +1435,18 @@ html, body{
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 1400px){
+  .xlg\:px-\[320px\]{
+    padding-left: 320px;
+    padding-right: 320px;
+  }
+
+  .xlg\:px-\[360px\]{
+    padding-left: 360px;
+    padding-right: 360px;
   }
 }
 
