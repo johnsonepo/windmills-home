@@ -1,4 +1,4 @@
-const slideIn = (direction, fromPosition, delay) => {
+const slideIn = (direction, fromPosition, delay, transition = 0.7) => {
     return { 
         hidden: {
             y: direction === 'up' ? fromPosition : direction === 'down' ? -fromPosition : 0,
@@ -10,13 +10,21 @@ const slideIn = (direction, fromPosition, delay) => {
             x: 0,
             opacity: 1,
             transition: {
-                duration: 0.7,
+                duration: transition,
                 type: 'tween',
                 delay: delay,
-                ease: [0.25,0.25, 0.25, 0.75],
+                ease: [0.25, 0.25, 0.25, 0.75],
             }
         },
     };
-}
+};
 
+const slideInText = (text, direction, fromPosition, delay, transition = 0.7) => {
+    return text.split('').map((char, index) => ({
+        char,
+        animation: slideIn(direction, fromPosition, delay + index * 0.2, transition),
+    }));
+};
+
+export { slideIn, slideInText };
 export default slideIn;

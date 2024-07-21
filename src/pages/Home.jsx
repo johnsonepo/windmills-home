@@ -12,6 +12,8 @@ import MajorClients from "../components/MajorClients";
 import TestimonialSlider from "../components/TestimonialSlider";
 import Footer from "../components/Footer";
 import FooterBottom from "../components/FooterBottom";
+import { FaPhone } from "react-icons/fa";
+
 
 const Home = () => {
     const getCurrentDate = () => {
@@ -32,7 +34,7 @@ const Home = () => {
                     <div className="flex flex-col sm:flex-row items-center sm:ml-auto space-y-3 sm:space-y-0 sm:space-x-10">
                         <div className="flex items-center space-x-2">
                             <span className="">CEO</span>
-                            <PhoneIcon className="h-6 w-6" />
+                            <FaPhone className="size-5 "/>
                             <p className="text-sm">+971 52 472 9083</p>
                         </div>
                         <div className="flex items-center">
