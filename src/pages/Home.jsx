@@ -71,7 +71,7 @@ const Home = () => {
                 <div className="w-full mb-10">
                     <MajorClients />
                 </div>
-                <div className = "mt-10 mb-64 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
+                <div className = "mt-10 mb-56 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <TestimonialSlider />
                 </div>
                 <div className = "mb-12 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px] bg-[#F6F6F6]">
