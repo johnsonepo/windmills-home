@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className=" mt-32">
+        <footer className=" pt-32 ">
             <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div className="space-y-4">
                     <h4 className="text-lg font-bold mb-4 text-primary uppercase">Valuation Service</h4>
