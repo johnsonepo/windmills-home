@@ -74,7 +74,7 @@ const Home = () => {
                 <div className = "mt-10 mb-56 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <TestimonialSlider />
                 </div>
-                <div className = "mb-12 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px] bg-[#F6F6F6]">
+                <div className = "pb-12 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px] bg-[#F6F6F6]">
                     <Footer />
                 </div>
                 <div className="w-full ">
