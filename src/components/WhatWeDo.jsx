@@ -4,7 +4,7 @@ import slideIn from "../utilities/animations/slide";
 
 const WhatWeDo = () => {
     return (
-        <div className="px-4 py-6">
+        <div className="py-6">
             <div className="grid grid-cols-1 md:grid-cols-2 mdl:grid-cols-4 gap-1">
                 {Services.map((service, index) => (
                     <motion.div 

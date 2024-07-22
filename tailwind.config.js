@@ -14,7 +14,7 @@ export default {
         'mdl': '978px',
         'mlg': '1000px',
         'mxlg': '1200px',
-        'xlg': '1400px',
+        'xlg': '1500px',
       },
       fontSize: {
         'nm': '15px',

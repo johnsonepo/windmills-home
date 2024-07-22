@@ -2,7 +2,7 @@ import ServicesData from "../data/services";
 
 const Services = () => {
     return (
-        <div className="px-4 py-8">
+        <div className="py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 mdl:grid-cols-4 gap-1">
                 {ServicesData.map((service, index) => (
                     <div key={index} className="p-4 flex flex-col items-center">

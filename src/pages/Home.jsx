@@ -59,7 +59,7 @@ const Home = () => {
                 <div className="w-full">
                     <TotalExperience />
                 </div>
-                <div className="ppx-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
+                <div className="px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">
                     <CoreServices />
                 </div>
                 <div className="mb-12 mt-6 px-3 md:px-6 lg:px-10 mxlg:px-32 xlg:px-[320px]">

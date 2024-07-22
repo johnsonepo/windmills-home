@@ -29,7 +29,7 @@ const TotalExperience = () => {
         <div className="relative bg-cover bg-center bg-no-repeat bg-fixed h-[600px] md:h-[450px] overflow-hidden mt-10"
             style={{ backgroundImage: `url(${TotalExperienceData.image})` }}
         >
-            <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-center justify-center text-white p-4">
+            <div className="absolute inset-0 bg-black bg-opacity-20 flex flex-col items-center justify-center text-white py-4">
                 <div className="relative w-full max-w-screen-xl mx-auto px-4 py-8">
                     <h1 className="text-3xl md:text-3xl font-bold mb-10 text-center">{TotalExperienceData.title}</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
@@ -39,7 +39,7 @@ const TotalExperience = () => {
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0}}
                             >
-                                <h2 className="text-4xl font-bold">{useCountUp(300, 3)}+</h2>
+                            <h2 className="text-4xl font-bold">{useCountUp(300, 3)}+</h2>
                             <p className="text-lg">Happy Customers</p>
                         </motion.div>
                         <motion.div
